@@ -197,6 +197,7 @@ https://spatie.be/docs/laravel-permission/v5/basic-usage/basic-usage
 <!-- Add in the DB seed -->
  User::factory(100)->create();
         
+       ```php
         $role = Role::create(['name' => 'writer']);
 
         $user = User::factory()->create([
@@ -205,6 +206,7 @@ https://spatie.be/docs/laravel-permission/v5/basic-usage/basic-usage
         ]);
 
         $user->assignRole($role);
+       ```
 
 <!-- DB:seed -->
 php artisan db:seed
