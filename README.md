@@ -12,10 +12,12 @@ npm install
 npm run dev
 
 <!-- Create migration  -->
+```php
 <!-- Add these lines in the User migration -->
     $table->string('username');
     $table->string('first_name');
     $table->string('last_name');
+```
 
 <!-- Country, State, City, Department, Employee -->
 php artisan make:model Country -m
